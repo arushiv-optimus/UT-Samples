@@ -13,7 +13,7 @@ namespace UTSampleCodeTest
     {
         // Inside if loop
         [TestMethod]
-        public void TestIsPrime_With0And1()
+        public void TestIsPrimeWith0And1()
         {
             PositiveAndNegativeCase positiveAndNegativeCase = new PositiveAndNegativeCase();
             bool expectedResult = true;
@@ -27,7 +27,7 @@ namespace UTSampleCodeTest
 
         // Inside if - for - if loop
         [TestMethod]
-        public void TestIsPrime_WithFalsePrimeValue()
+        public void TestIsPrimeWithFalsePrimeValue()
         {
             PositiveAndNegativeCase positiveAndNegativeCase = new PositiveAndNegativeCase();
             bool expectedResult = false;
@@ -41,7 +41,7 @@ namespace UTSampleCodeTest
 
         // Inside if - for loop
         [TestMethod]
-        public void TestIsPrime_WithTruePrimeValue()
+        public void TestIsPrimeWithTruePrimeValue()
         {
             PositiveAndNegativeCase positiveAndNegativeCase = new PositiveAndNegativeCase();
             bool expectedResult = true;
@@ -55,7 +55,7 @@ namespace UTSampleCodeTest
 
         // Inside else loop
         [TestMethod]
-        public void TestIsPrime_WithNegativeValue()
+        public void TestIsPrimeWithNegativeValue()
         {
             PositiveAndNegativeCase positiveAndNegativeCase = new PositiveAndNegativeCase();
             bool expectedResult = false;
@@ -94,7 +94,7 @@ namespace UTSampleCodeTest
 
         [TestMethod]
         [ExpectedException(typeof(System.DivideByZeroException))]
-        public void TestDivide_With_DivideByZeroException()
+        public void TestDivideWithDivideByZeroException()
         {
             ExceptionHandlingCase exceptionHandlingCase = new ExceptionHandlingCase();
             int numerator = 4;
@@ -119,7 +119,7 @@ namespace UTSampleCodeTest
         }
 
         [TestMethod]
-        public void TestSmallest_With_SizeZero()
+        public void TestSmallestWithSizeZero()
         {
             ExceptionHandlingCase exceptionHandlingCase = new ExceptionHandlingCase();
             int[] arr = { 12 };
@@ -134,7 +134,7 @@ namespace UTSampleCodeTest
 
         [TestMethod]
         [ExpectedException(typeof(NullReferenceException))]
-        public void TestSmallest_With_NullReferenceException()
+        public void TestSmallestWithNullReferenceException()
         {
             ExceptionHandlingCase exceptionHandlingCase = new ExceptionHandlingCase();
             int[] arr = null;
@@ -145,7 +145,7 @@ namespace UTSampleCodeTest
         }
 
         [TestMethod]
-        public void TestSmallest_WithNullValue()
+        public void TestSmallestWithNullValue()
         {
             try
             {
